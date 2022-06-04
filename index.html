@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bank Card Website" />
+    <meta name="keywords" content="bank cards, bank" />
+    <meta name="author" content="Revan Isa" />
+    <title>Bank Card</title>
+
+    <!-- ?CSS only -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="img/bank card.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bgColor">
+      <div class="container">
+        <a class="navbar-brand fs-4 fw-bold" href="#">
+          <i class="fa-brands fa-cc-visa fa-1xs me-2"></i>Bank Cards</a
+        >
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lastSection">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#blogPosts">Blog Posts</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Page2</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Page3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ranking">Ranking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#howto">Instruction</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+              >
+                <i
+                  class="fa-solid fa-magnifying-glass fa-white"
+                  style="color: white"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ?search modal -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control form-input"
+                placeholder="Search anything..."
+              />
+              <button type="button" class="btn btn-primary">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main section 1 -->
+
+    <section class="p-5 bgColor">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators mt-5">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-5">
+            <div class="container mb-5">
+              <div class="row justify-content-lg-between align-items-lg-center">
+                <div class="col-md-6 text-center text-md-start">
+                  <h1 class="text-white fw-bolder text-center text-md-start">
+                    The Britest bank card in your wallet
+                  </h1>
+                  <p class="my-4 text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit and
+                    Ipsum magnam perferendis eos illum neque officiis.
+                  </p>
+                  <button
+                    class="btn btn-info rounded-5 me-2 px-4 text-white fw-semibold"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    data-bs-whatever="@getbootstrap"
+                  >
+                    Book A Card
+                  </button>
+                  <button
+                    class="btn btn-outline-light rounded-5 px-4 fw-semibold"
+                  >
+                    <a
+                      href="https://google.com"
+                      class="text-decoration-none text-info"
+                      >Read More</a
+                    >
+                  </button>
+                </div>
+                <div class="col-md-6 p-0">
+                  <img
+                    src="img/Monobank-card.png"
+                    class="img-fluid mt-4 mt-md-0 d-block mx-auto"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item mb-5">
+            <div class="container mb-5">
+              <div class="row justify-content-lg-between align-items-lg-center">
+                <div class="col-md-6 text-center text-md-start">
+                  <h1 class="text-white fw-bolder text-center text-md-start">
+                    The Britest bank card in your wallet
+                  </h1>
+                  <p class="my-4 text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit and
+                    Ipsum magnam perferendis eos illum neque officiis.
+                  </p>
+                  <button
+                    class="btn btn-info rounded-5 me-2 px-4 text-white fw-semibold"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    data-bs-whatever="@getbootstrap"
+                  >
+                    Book A Card
+                  </button>
+                  <button
+                    class="btn btn-outline-light rounded-5 px-4 fw-semibold"
+                  >
+                    <a
+                      href="https://google.com"
+                      class="text-decoration-none text-info"
+                      >Read More</a
+                    >
+                  </button>
+                </div>
+                <div class="col-md-6 p-0">
+                  <img
+                    src="img/bank card.jpg"
+                    class="img-fluid mt-4 mt-md-0 rounded-2 d-block mx-auto"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item mb-5">
+            <div class="container mb-5">
+              <div class="row justify-content-lg-between align-items-lg-center">
+                <div class="col-md-6 text-center text-md-start">
+                  <h1 class="text-white fw-bolder text-center text-md-start">
+                    The Britest bank card in your wallet
+                  </h1>
+                  <p class="my-4 text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit and
+                    Ipsum magnam perferendis eos illum neque officiis.
+                  </p>
+                  <button
+                    class="btn btn-info rounded-5 me-2 px-4 text-white fw-semibold"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    data-bs-whatever="@getbootstrap"
+                  >
+                    Book A Card
+                  </button>
+                  <button
+                    class="btn btn-outline-light rounded-5 px-4 fw-semibold"
+                  >
+                    <a
+                      href="https://google.com"
+                      class="text-decoration-none text-info"
+                      >Read More</a
+                    >
+                  </button>
+                </div>
+                <div class="col-md-6 p-0">
+                  <img
+                    src="img/bank 3.jpg"
+                    class="img-fluid mt-4 mt-md-0 rounded-2 d-block mx-auto"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ?Booking Modal -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bgColor2 text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Book A Card</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation">
+              <div class="mb-3">
+                <label for="recipient-name" class="form-label"
+                  >Name<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="recipient-name"
+                  required
+                />
+                <div class="invalid-tooltip">
+                  Please, fill in<span style="color: red">*</span>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="validationServer01" class="form-label"
+                  >Last name<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationServer01"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="validationTooltip03" class="form-label"
+                  >City<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip03"
+                  required
+                />
+                <div class="invalid-tooltip">Please provide a valid city.</div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationTooltip05" class="form-label"
+                  >Zip<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip05"
+                  required
+                />
+                <div class="invalid-tooltip">Please provide a valid zip.</div>
+              </div>
+              <div>
+                <button class="btn btn-primary w-100 mb-3" type="submit">
+                  Order Now!
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main section 2 boxes -->
+    <section class="p-5 position-relative">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="container mainCard">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="card border-0 shadow">
+                  <div class="card-body text-center">
+                    <p class="text-muted">More than</p>
+                    <h5 class="card-title fw-bold fs-3">
+                      <i class="fa-brands fa-cc-visa me-2"></i>32167
+                    </h5>
+                    <p class="text-muted">Issued cards</p>
+                    <p class="card-text text-muted text-start">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="card border-0 shadow">
+                  <div class="card-body text-center">
+                    <p class="text-muted">More than</p>
+                    <h5 class="card-title fw-bold fs-3">
+                      <i class="fa-solid fa-money-bill me-2"></i>32167
+                    </h5>
+                    <p class="text-muted">Issued cards</p>
+                    <p class="card-text text-muted text-start">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="card border-0 shadow">
+                  <div class="card-body text-center">
+                    <p class="text-muted">More than</p>
+                    <h5 class="card-title fw-bold fs-3">
+                      <i class="fa-solid fa-chart-line me-2"></i>32167
+                    </h5>
+                    <p class="text-muted">Issued cards</p>
+                    <p class="card-text text-muted text-start">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main section 2 -->
+      <div class="container d-lg-flex justify-content-lg-around">
+        <div class="col-lg-5">
+          <h1 class="fw-bold">Black Premium Bank Cards</h1>
+          <p class="lead mt-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
+            consectetur ad, illum modi incidunt, culpa eum earum animi
+            laboriosam veritatis quos, officiis eius porro quibusdam deleniti!
+            Iusto explicabo recusandae quaerat!
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/123.jpeg" class="img-fluid rounded-1" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+
+    <section class="p-5 bg-light" id="services">
+      <div class="text-center mb-5">
+        <h6 class="text-muted fw-bold">Our Services</h6>
+        <h1>Advantages and Details</h1>
+      </div>
+      <div class="container">
+        <div class="d-flex">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0 bg-transparent">
+                <div class="card-body text-center position-relative">
+                  <div
+                    class="position-absolute start-0 top-0 text-start translate-middle"
+                  >
+                    <i class="fa-solid fa-quote-left fa-2x"></i>
+                  </div>
+                  <p
+                    class="card-text text-muted text-lg-start text-center my-3"
+                  >
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div
+                    class="d-flex flex-column flex-lg-row align-items-center justify-content-center align-content-lg-center"
+                  >
+                    <div class="col-3 my-4 my-lg-0">
+                      <img
+                        src="img/girl.jpg"
+                        class="img-fluid rounded-circle"
+                        style="height: 60px"
+                      />
+                    </div>
+                    <div class="col-8 text-center">
+                      <h6>Mary M. M.</h6>
+                      <p class="text-muted">08.08.2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <div><i class="fa-solid fa-chart-line fa-2x"></i></div>
+                  <h5 class="card-title fw-bold my-3">Financial Goals</h5>
+                  <p class="card-text text-muted text-lg-start text-center">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <div>
+                    <i class="fa-solid fa-envelope-open-text fa-2x"></i>
+                  </div>
+                  <h5 class="card-title fw-bold my-3">Email Newsletter</h5>
+                  <p class="card-text text-muted text-lg-start text-center">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <div><i class="fa-solid fa-desktop fa-2x"></i></div>
+                  <h5 class="card-title fw-bold my-3">Detailled Statistics</h5>
+                  <p class="card-text text-muted text-lg-start text-center">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- statistical informations -->
+    <section class="p-5" id="ranking">
+      <div class="text-center mb-5">
+        <h6 class="text-muted fw-bold">Ranking Statistics</h6>
+        <h1>Statistical Informations</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis, modi alias cumque sequi aliquam dicta.
+            </p>
+            <label for="">Financial consulting </label>
+            <div class="progress my-2">
+              <div class="progress-bar" style="width: 80%">80%</div>
+            </div>
+            <label for="">Online bank cards </label>
+            <div class="progress my-2">
+              <div class="progress-bar" style="width: 95%">95%</div>
+            </div>
+            <label for="">Online banking </label>
+            <div class="progress my-2">
+              <div class="progress-bar" style="width: 83%">90%</div>
+            </div>
+            <label for="">24/7 support </label>
+            <div class="progress my-2">
+              <div class="progress-bar" style="width: 97%">97%</div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 mt-4 mt-lg-0 d-lg-flex justify-content-center align-items-center"
+          >
+            <!-- circle -->
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-6 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="progress-circle p2 over50">
+                    <span>65%</span>
+                    <div class="left-half-clipper">
+                      <div class="first50-bar"></div>
+                      <div class="value-bar"></div>
+                    </div>
+                  </div>
+                  <p>Economy</p>
+                </div>
+                <div
+                  class="col-6 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="progress-circle over50 p69">
+                    <span>69%</span>
+                    <div class="left-half-clipper">
+                      <div class="first50-bar"></div>
+                      <div class="value-bar"></div>
+                    </div>
+                  </div>
+                  <p>Stability</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div
+                  class="col-6 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="progress-circle over50 p75">
+                    <span>75%</span>
+                    <div class="left-half-clipper">
+                      <div class="first50-bar"></div>
+                      <div class="value-bar"></div>
+                    </div>
+                  </div>
+                  <p>Cashback</p>
+                </div>
+                <div
+                  class="col-6 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="progress-circle over50 p100">
+                    <span>100%</span>
+                    <div class="left-half-clipper">
+                      <div class="first50-bar"></div>
+                      <div class="value-bar"></div>
+                    </div>
+                  </div>
+                  <p>Guarantee</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- circle -->
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center mt-3 mt-lg-0"
+          >
+            <img
+              src="img/person-using-tablet-computer.jpg"
+              class="img-fluid rounded-1"
+              style="height: 350px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- book a card -->
+    <section class="p-5 bg-primary bgColor">
+      <div
+        class="container-fluid d-flex flex-column flex-lg-row justify-content-center align-items-center"
+      >
+        <h1 class="text-white text-center">Choose Your Bank Card Now!</h1>
+        <button
+          class="btn btn-dark rounded-5 ms-lg-3 mt-3 mt-lg-0"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          data-bs-whatever="@getbootstrap"
+        >
+          Book a card
+        </button>
+      </div>
+    </section>
+
+    <!-- how to order a card -->
+    <section class="p-5" id="howto">
+      <div class="container">
+        <h1 class="text-center">How to order a New Card?</h1>
+        <div class="d-flex">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <div>
+                    <i
+                      class="fa-solid fa-arrow-right-to-bracket fa-2x bg-light rounded-circle p-3"
+                    ></i>
+                  </div>
+                  <h5 class="card-title fw-bold my-3">Online Registration</h5>
+                  <p class="card-text text-muted text-lg-start text-center">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <div>
+                    <i
+                      class="fa-solid fa-file-signature fa-2x bg-light rounded-circle p-3"
+                    ></i>
+                  </div>
+                  <h5 class="card-title fw-bold my-3">Filling Out a Form</h5>
+                  <p class="card-text text-muted text-lg-start text-center">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <div>
+                    <i
+                      class="fa-solid fa-pen fa-2x bg-light rounded-circle p-3"
+                    ></i>
+                  </div>
+                  <h5 class="card-title fw-bold my-3">Signing an Agreement</h5>
+                  <p class="card-text text-muted text-lg-start text-center">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <div>
+                    <i
+                      class="fa-solid fa-credit-card fa-2x bg-light rounded-circle p-3"
+                    ></i>
+                  </div>
+                  <h5 class="card-title fw-bold my-3">Using a card</h5>
+                  <p class="card-text text-muted text-lg-start text-center">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- latest blog posts -->
+    <section class="p-5 bg-light" id="blogPosts">
+      <div class="container">
+        <h1 class="text-center mb-5">Latest blog posts</h1>
+        <div class="d-flex">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0 shadow cardHover pb-3">
+                <img src="img/blog1.jpg" class="img-fluid" alt="" />
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold my-3 text-start">
+                    7 Banking services that can save retirees money
+                  </h5>
+                  <div class="text-start mt-4">
+                    <i class="fa-solid fa-calendar-days text-muted"></i
+                    ><span class="text-muted ms-3">06.02.2022</span>
+                  </div>
+                  <p class="card-text text-muted text-start">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0 shadow cardHover">
+                <img src="img/blog2.jpg" class="img-fluid" alt="" />
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold my-3 text-start">
+                    8 Ways to Drive Adoption of Your Banking App
+                  </h5>
+                  <div class="text-start">
+                    <i class="fa-solid fa-calendar-days text-muted"></i
+                    ><span class="text-muted ms-3">03.03.2022</span>
+                  </div>
+                  <p class="card-text text-muted text-start">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <div class="card border-0 shadow cardHover">
+                <img src="img/blog3.jpg" class="img-fluid" alt="" />
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold my-3 text-start">
+                    How is it programming and what will 2022 bring?
+                  </h5>
+                  <div class="text-start">
+                    <i class="fa-solid fa-calendar-days text-muted"></i
+                    ><span class="text-muted ms-3">04.25.2022</span>
+                  </div>
+                  <p class="card-text text-muted text-start">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center my-5">
+          <a href="https://unsplash.com/" class="btn btn-outline-dark rounded-5"
+            >View all blog posts</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="p-5 bgColor2" id="lastSection">
+      <div class="container-fluid d-lg-flex">
+        <div class="col-lg-4 p-4 text-center text-lg-start">
+          <h3 class="text-white" href="#">
+            <i class="fa-brands fa-cc-visa fa-1xs me-2"></i>Bank Cards
+          </h3>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            veniam, magni neque saepe dolores fugit commodi earum eum omnis ab,
+            facere voluptas molestias officiis placeat porro iure consectetur
+            itaque nostrum.
+          </p>
+        </div>
+        <div class="col-lg-2 py-4 text-center text-lg-start">
+          <h3 class="text-white text-lg-start">Quick Links</h3>
+          <div
+            class="aClass d-flex flex-column justify-content-center align-items-lg-start"
+          >
+            <a href="#" class="text-decoration-none text-white my-1"
+              >About Us</a
+            >
+            <a href="#" class="text-decoration-none text-white my-1"
+              >Blog Posts</a
+            >
+            <a href="#" class="text-decoration-none text-white my-1"
+              >Pricing Plans</a
+            >
+            <a href="#" class="text-decoration-none text-white my-1"
+              >Services</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 p-4 text-center text-lg-start">
+          <h3 class="text-white">Head Office</h3>
+          <div
+            class="aClass d-flex flex-column justify-content-center align-items-lg-start"
+          >
+            <address class="text-white my-1">
+              <i class="fa-solid fa-location-dot me-1"></i>
+              9 Glenwood Rd Glen Head, New York(NY), 11545
+            </address>
+            <a
+              href="tel:+5166766041"
+              class="text-decoration-none text-white my-1"
+              ><i class="fa-solid fa-phone me-1"></i>(+516) 676-6041</a
+            >
+
+            <a
+              href="mailto:info@mail.com"
+              class="text-decoration-none text-white my-1"
+              ><i class="fa-solid fa-envelope me-1"></i>info@mail.com</a
+            >
+            <a
+              href="mailto:info@support.com"
+              class="text-decoration-none text-white my-1"
+              ><i class="fa-solid fa-headset me-1"></i>info@support.com</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 p-4 text-center text-lg-start">
+          <h3 class="text-white">Latest Posts</h3>
+          <div
+            class="aClass d-flex flex-column justify-content-center align-items-lg-start"
+          >
+            <p class="text-white fw-bold my-1">
+              7 Banking services that can save retirees money
+            </p>
+            <p class="text-white my-1">06.02.2022</p>
+            <p class="text-white fw-bold my-1">
+              Stocks Could Surge 10% between New and 2022
+            </p>
+            <p class="text-white my-1">06.06.2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <hr />
+        <p class="text-white text-center">
+          &copy; 2022 Bank Cards. All rights reserved. Design by
+          <code>Revan Isa</code>
+        </p>
+      </div>
+    </section>
+
+    <!-- arrow top  -->
+    <button
+      id="myBtn"
+      class="btn btn-outline-info border-0 rounded-2 position-fixed end-0 bottom-0 me-5 mb-5 px-2 py-1"
+    >
+      <i class="fa-solid fa-circle-arrow-up fa-3x"></i>
+    </button>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- scroll arrow to top script -->
+
+    <script src="scrollTop.js"></script>
+  </body>
+</html>
